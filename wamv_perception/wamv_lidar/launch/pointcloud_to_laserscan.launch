@@ -1,4 +1,5 @@
 <launch>
+    <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" />    
 
     <!-- Create a manager becuase nodelets wont launch without one-->
     <node pkg="nodelet" type="nodelet" name="pointcloud_to_laserscan_manager" output="screen" respawn="true" args="manager"/>
